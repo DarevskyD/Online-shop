@@ -1,6 +1,5 @@
 <template>
-  <div class="v-main-wrapper">
-    <p>{{title}}</p>
+  <div class="v-main-wrapper">    
     <v-catalog />
     <v-cart />
   </div>    
@@ -29,12 +28,8 @@
 </script>
 
 <style>
-  .v-main-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 900px;
+  .v-main-wrapper {    
+    max-width: 900px;
     margin: 0 auto;
   }
 </style>
