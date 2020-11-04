@@ -1,15 +1,13 @@
-<template>
-  <div>
-    <div class="v-catalog-item">
-      <img class="v-catalog-item__image" :src="require('../assets/image/' + product_data.image)">
-      <p class="v-catalog-item__name">{{product_data.name}}</p>
-      <p class="v-catalog-item__price">Price: {{product_data.price}} p.</p>
-      <button class="v-catalog-item__add_btn btn" 
-              @click="addToCart">
-      Add to cart
-      </button>
-    </div>
-  </div>
+<template>  
+  <div class="v-catalog-item">
+    <img class="v-catalog-item__image" :src="require('../assets/image/' + product_data.image)">
+    <p class="v-catalog-item__name">{{product_data.name}}</p>
+    <p class="v-catalog-item__price">Price: {{product_data.price}} p.</p>
+    <button class="v-catalog-item__add_btn btn" 
+            @click="addToCart">
+     Add to cart
+    </button>
+  </div>  
 </template>
 
 <script>
