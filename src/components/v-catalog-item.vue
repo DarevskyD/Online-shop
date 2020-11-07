@@ -29,7 +29,7 @@
     computed: {},
     methods: {
       addToCart() {
-        this.$emit('sendArticle', this.product_data.article)
+        this.$emit('addToCart', this.product_data);
       }
     }        
   }
