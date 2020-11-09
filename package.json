@@ -2,8 +2,10 @@
   "name": "online-shop",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+  "scripts": {     
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run json\"",
     "serve": "vue-cli-service serve",
+    "json": "json-server --watch db.json",   
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
