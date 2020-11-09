@@ -3,7 +3,7 @@
     <img class="v-cart-item__img" :src="require('../assets/image/' + cart_item_data.image)" alt="">
     <div class="v-cart-item__info">
       <p>{{cart_item_data.name}}</p>
-      <p>{{cart_item_data.price}}</p>
+      <p>{{cart_item_data.price}} p.</p>
       <p>{{cart_item_data.article}}</p>
     </div>
     <div class="v-cart-item__qty">

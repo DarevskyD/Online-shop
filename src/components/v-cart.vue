@@ -1,6 +1,10 @@
 <template>  
     <div class="v-cart">
+      <router-link :to="{name:'catalog'}">
+      <div class="v-catalog__counter_card_link">Back to Catalog</div>
+    </router-link>
       <h1>Cart</h1>
+      <p v-if="!cart_data.length">Cart is empty...</p>
       <v-cart-item 
         v-for="(item, index) in cart_data"
         :key="item.article"
