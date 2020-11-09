@@ -16,7 +16,20 @@ let store = new Vuex.Store({
       state.products = products;
     },
     SET_CART: (state, product) => {
-      state.cart.push(product);
+      if(state.cart.length) {
+        let isProductExist = false;
+        state.cart.filter((item) => {
+          if(item.article === product.article) {
+            isProductExist = true;
+            item.quantity++;
+          }
+        })
+        if(!isProductExist) {
+          state.cart.push(product);
+        }
+      } else {
+        state.cart.push(product);
+      }            
     },
     REMOVE_FROM_CART_ITEM: (state, index) => {
       state.cart.splice(index, 1);
