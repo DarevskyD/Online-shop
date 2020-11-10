@@ -1,2 +1,16 @@
-  
+
 @import 'variables.scss';
+
+.btn {
+  padding: $padding $padding*2;
+  background: $btn-bg;
+  color: #fff;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+
+  &:hover {
+    background:  rgb(125, 220, 31);
+    box-shadow: 0 0 4px rgb(75, 83, 75);
+  }
+}
