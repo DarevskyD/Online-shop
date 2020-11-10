@@ -1,6 +1,6 @@
 <template>  
   <div class="v-catalog-item">
-    <img class="v-catalog-item__image" :src="require('../assets/image/' + product_data.image)">
+    <img class="v-catalog-item__image" :src="require('@/assets/image/' + product_data.image)">
     <div class="v-catalog-content-box  ">
       <p class="v-catalog-item__name">{{product_data.name}}</p>
       <p class="v-catalog-item__price">Price: {{product_data.price}} p.</p>
@@ -24,16 +24,17 @@
       }
     },
     data () {
-      return{
-        
-      }
+      return{}
     },
     computed: {},
     methods: {
       addToCart() {
         this.$emit('addToCart', this.product_data);
-      }
-    }        
+      }     
+    },
+    mounted() {
+      this.$set(this.product_data, 'quantity', 1);
+    }         
   }
 </script>
 

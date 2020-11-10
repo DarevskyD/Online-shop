@@ -31,5 +31,6 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: 100px;
   }
 </style>

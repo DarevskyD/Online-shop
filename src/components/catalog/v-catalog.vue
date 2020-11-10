@@ -6,14 +6,14 @@
     
     <h1>Catalog</h1>
     <div class="v-catalog__list">
-  <!-- v-for="product in this.$store.state.products" -->
+    <!-- v-for="product in this.$store.state.products" -->
       <v-catalog-item 
-      v-for="product in PRODUCTS"
-      :key="product.article" 
-      :product_data = "product" 
-      @addToCart = "addToCart"
+        v-for="product in PRODUCTS"
+        :key="product.article" 
+        :product_data = "product" 
+        @addToCart = "addToCart"
       />        
-    </div>      
+    </div>        
   </div>  
 </template>
 
@@ -58,6 +58,8 @@
 </script>
 
 <style lang="scss">
+  @import './src/assets/styles/variables.scss';
+
   .v-catalog {
    
     &__list {
@@ -71,7 +73,7 @@
       position: absolute;
       top: 20px;
       right: 25px;
-      padding: 16px;
+      padding: $padding;
       border: 1px solid rgb(75, 83, 75);      
     }
   } 
