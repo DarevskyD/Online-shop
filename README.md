@@ -4,10 +4,18 @@
 ```
 npm install
 ```
+### Concurrently \npm run serve  and  \npm run json
+```
+npm run dev
+```
 
 ### Compiles and hot-reloads for development
 ```
 npm run serve
+```
+### Watch db.json
+```
+npm run json
 ```
 
 ### Compiles and minifies for production
