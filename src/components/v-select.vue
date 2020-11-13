@@ -41,7 +41,8 @@ export default {
   },
   methods: {
     selectOption(option) {
-      this.$emit('select', option);      
+      this.$emit('select', option);
+      this.areOptionsVisible = false;      
     },
     hideSelect() {
       this.areOptionsVisible = false;
@@ -65,19 +66,21 @@ export default {
 
     &__title {
       border: 1px solid rgb(170, 170, 170);
+      padding: $padding;
       cursor: pointer;
     }
 
     &__options {
-      box-sizing: border-box;
-      border: 1px solid rgb(170, 170, 170);
+      box-sizing: border-box;      
+      background: rgb(99, 181, 17);
       position: absolute;
-      top: 30px;
+      top: 40px;
       right: 0;
       width: 100%;
 
       .options__item {
       margin: 0;
+      padding: $padding;
       cursor: pointer;
 
       &:hover {

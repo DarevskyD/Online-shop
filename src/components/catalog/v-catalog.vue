@@ -6,14 +6,14 @@
         
     <h1>Catalog</h1>    
     <v-select
-        :options = "options"
-        @select = "optionSelect"
+        :options = "categories"
+        @select = "sortCategories"
         :selected = "selected" 
     />
     <div class="v-catalog__list">
     <!-- v-for="product in this.$store.state.products" -->
       <v-catalog-item 
-        v-for="product in PRODUCTS"
+        v-for="product in filterProducts"
         :key="product.article" 
         :product_data = "product" 
         @addToCart = "addToCart"
@@ -36,21 +36,28 @@
     props: {},
     data () {
       return{
-        options: [
-          {name: 'option1', value: 1},
-          {name: 'option2', value: 2},
-          {name: 'option3', value: 3},
-          {name: 'option4', value: 4},
-          {name: 'option5', value: 5}
+        categories: [
+          {name: 'All', value: 'all'},
+          {name: 'Men', value: 'men'},
+          {name: 'Women', value: 'women'},
+          {name: 'Kids', value: 'kids'}         
         ],
-        selected: 'Select'      
+        selected: 'All',
+        sortProducts: []      
       }
     },
     computed: {
       ...mapGetters([
         'PRODUCTS',
         'CART'
-      ])
+      ]),      
+      filterProducts() {
+        if(this.sortProducts.length) {
+          return this.sortProducts;
+        } else {
+          return this.PRODUCTS;
+        }
+      }
     },
     methods: {
       ...mapActions([
@@ -60,8 +67,14 @@
       addToCart(data) {
         this.ADD_TO_CART(data);
       },
-      optionSelect(option) {
-        this.selected = option.name;       
+      sortCategories(category) {
+        this.sortProducts = [];        
+        this.PRODUCTS.filter((item) => {
+          if(item.category === category.value) {
+            this.sortProducts.push(item);
+          }
+        })
+        this.selected = category.name;             
       }
     },
     mounted() {
