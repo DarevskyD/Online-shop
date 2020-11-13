@@ -2,51 +2,75 @@
   "products": [
     {
       "image": "ouch1.png",
-      "name": "T-shirt 1",
+      "name": "Men 1",
       "price": 100,
       "article": "T1",
       "available": true,
-      "category": "Мужские"
+      "category": "men"
     },
     {
       "image": "ouch2.png",
-      "name": "T-shirt 2",
+      "name": "Kids 1",
       "price": 120,
       "article": "T2",
       "available": true,
-      "category": "Женские"
+      "category": "kids"
     },
     {
       "image": "ouch3.png",
-      "name": "T-shirt 3",
+      "name": "Women 1",
       "price": 90,
       "article": "T3",
       "available": false,
-      "category": "Женские"
+      "category": "women"
     },
     {
       "image": "ouch4.png",
-      "name": "T-shirt 4",
+      "name": "Kids 2",
       "price": 75,
       "article": "T4",
       "available": true,
-      "category": "Мужские"
+      "category": "kids"
     },
     {
       "image": "ouch5.png",
-      "name": "T-shirt 5",
+      "name": "Women 2",
       "price": 115,
       "article": "T5",
       "available": false,
-      "category": "Женские"
+      "category": "women"
     },
     {
       "image": "ouch6.png",
-      "name": "T-shirt 6",
+      "name": "Men 2",
       "price": 130,
       "article": "T6",
       "available": true,
-      "category": "Женские"
+      "category": "men"
+    },
+    {
+      "image": "ouch2.png",
+      "name": "Kids 3",
+      "price": 130,
+      "article": "T7",
+      "available": true,
+      "category": "kids"
+    },
+    {
+      "image": "ouch3.png",
+      "name": "Men 3",
+      "price": 130,
+      "article": "T8",
+      "available": true,
+      "category": "men"
+    },
+    {
+      "image": "ouch1.png",
+      "name": "Women 3",
+      "price": 130,
+      "article": "T9",
+      "available": true,
+      "category": "women"
     }
   ]
 }
