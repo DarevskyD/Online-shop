@@ -3,7 +3,7 @@
     {
       "image": "ouch1.png",
       "name": "Men 1",
-      "price": 100,
+      "price": 200,
       "article": "T1",
       "available": true,
       "category": "men"
@@ -11,7 +11,7 @@
     {
       "image": "ouch2.png",
       "name": "Kids 1",
-      "price": 120,
+      "price": 300,
       "article": "T2",
       "available": true,
       "category": "kids"
@@ -19,7 +19,7 @@
     {
       "image": "ouch3.png",
       "name": "Women 1",
-      "price": 90,
+      "price": 500,
       "article": "T3",
       "available": false,
       "category": "women"
@@ -27,7 +27,7 @@
     {
       "image": "ouch4.png",
       "name": "Kids 2",
-      "price": 75,
+      "price": 400,
       "article": "T4",
       "available": true,
       "category": "kids"
@@ -35,7 +35,7 @@
     {
       "image": "ouch5.png",
       "name": "Women 2",
-      "price": 115,
+      "price": 700,
       "article": "T5",
       "available": false,
       "category": "women"
@@ -43,7 +43,7 @@
     {
       "image": "ouch6.png",
       "name": "Men 2",
-      "price": 130,
+      "price": 250,
       "article": "T6",
       "available": true,
       "category": "men"
@@ -51,7 +51,7 @@
     {
       "image": "ouch2.png",
       "name": "Kids 3",
-      "price": 130,
+      "price": 450,
       "article": "T7",
       "available": true,
       "category": "kids"
@@ -59,7 +59,7 @@
     {
       "image": "ouch3.png",
       "name": "Men 3",
-      "price": 130,
+      "price": 550,
       "article": "T8",
       "available": true,
       "category": "men"
@@ -67,7 +67,7 @@
     {
       "image": "ouch1.png",
       "name": "Women 3",
-      "price": 130,
+      "price": 550,
       "article": "T9",
       "available": true,
       "category": "women"
