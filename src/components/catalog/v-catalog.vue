@@ -103,17 +103,18 @@
         }
         this.sortCategories();
       },
-       sortCategories(category) {             
+      sortCategories(category) {
+        let vm = this;
         this.sortProducts = [...this.PRODUCTS]
-        this.sortProducts = this.sortProducts.filter((item) => {
-          return item.price >= this.minPrice && item.price <= this.maxPrice;
+        this.sortProducts = this.sortProducts.filter(function (item) {
+          return item.price >= vm.minPrice && item.price <= vm.maxPrice
         })
-        if(category) {
-          this.sortProducts = this.sortProducts.filter((e) => {
-            this.selected = category.name;
-            return e.category === category.value;          
-          })         
-        }                           
+        if (category) {
+          this.sortProducts = this.sortProducts.filter(function (e) {
+            vm.selected = category.name;
+            return e.category === category.value
+          })
+        }      
       }
     },    
     mounted() {
