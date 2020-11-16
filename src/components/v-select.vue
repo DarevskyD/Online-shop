@@ -74,7 +74,7 @@ export default {
       box-sizing: border-box;      
       background: rgb(99, 181, 17);
       position: absolute;
-      top: 40px;
+      top: 55px;
       right: 0;
       width: 100%;
 
